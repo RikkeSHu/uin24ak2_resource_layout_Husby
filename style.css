@@ -28,7 +28,7 @@ body {
     background-color: var(--white);
     padding: 1rem;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     display: flex;    
     flex-direction: column;
     align-items: center;
@@ -41,6 +41,7 @@ nav{
     left: 0;
     width: 100%;
     padding: 1rem;
+    font-size: 1.5rem;
     align-items: center;
     position: absolute;
     top: -40%;
@@ -51,7 +52,7 @@ nav{
 nav ul{
     list-style-type: none;
     display: flex;
-    margin: 0;
+    margin: -0.25rem;
     padding: 0;
 }
 
@@ -73,10 +74,6 @@ nav a{
 nav a:hover{
     background-color: var(--white);
     color: var(--blue);
-}
-
-nav.active {
-    background-color: var(--white);
 }
 
 nav li.active {
