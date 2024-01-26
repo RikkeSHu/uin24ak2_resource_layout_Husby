@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
     --blue: #2A324B;
@@ -10,30 +10,61 @@
 
 }
 
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--light-grey);
     font-family: var(--font);
 }
 
 #container{
-    width: 100%;
-    margin: 0 auto;
-    min-height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--white);
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
 }
 
+
 nav{
-    background-color: var(--blue);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%, 40%);
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav li{
+    margin-right: 1rem;
+    background-color: var(--blue);
+    margin: auto;
 }
 
 nav a{
     display: inline-block;
-    padding: 1rem;
+    margin: 1rem;
     color: var(--white);
     text-decoration: none;
     box-sizing: border-box;
@@ -43,4 +74,17 @@ nav a:hover{
     background-color: var(--white);
     color: var(--blue);
 }
+
+nav.active {
+    background-color: var(--white);
+}
+
+nav li.active {
+    background-color: var(--white);
+}
+
+nav li.active a {
+    color: var(--blue);
+}
+
 
