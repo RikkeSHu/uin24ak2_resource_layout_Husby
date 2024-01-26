@@ -71,6 +71,11 @@ nav a{
     box-sizing: border-box;
 }
 
+nav li:hover{
+    background-color: var(--white);
+    color: var(--blue);
+}
+
 nav a:hover{
     background-color: var(--white);
     color: var(--blue);
